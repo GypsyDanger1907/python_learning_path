@@ -1,0 +1,59 @@
+# ---- + , - , * , / , ** , % , // ----
+
+friends = 0
+
+friends += 4 # or friends = friends + 4
+print(friends) # 4
+
+friends -= 1 # or friends = friends - 1
+print(friends) # 3
+
+friends *= 5 # or friends = friends * 5
+print(friends) # 15
+
+friends /= 3 # or friends = friends / 3
+print(friends) # 5.0
+
+friends **=2 # or friends = friends ** 2
+print(friends) # 25
+
+remainder = friends % 3
+print(remainder) # 1.0
+
+friends //= 3 # or friends = friends // 3
+print(friends) # 8.0
+
+# ----round(), abs(), pow(), max(), min()----
+
+x = 3.14
+y = -4
+z = 5
+
+print(round(x)) # 3
+print(abs(y)) # 4
+print(pow(z, y)) # 1/625 or 0.0016
+print(max(x, y, z)) # 5
+print(min(x, y, z)) # -4
+
+# math
+
+import math
+
+print(math.pi) # 3.141592653589793
+print(math.e) # 2.718281828459045
+print(math.sqrt(4)) # 2.0
+print(math.ceil(3.1)) # 4
+print(math.floor(2.9)) # 2
+
+#EXAMPLE - Area and circumference calculator for triangle and circle
+
+import math
+
+radius = float(input("Enter radius: "))
+print(f"Area of circle (approximately) is: {round(math.pi * pow(radius, 2))} cm^2(s)")
+print(f"Circumference of circle (approximately) is: {round(2 * math.pi * radius)} cm(s)")
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+print(f"Area of this triangle (approximately) is: {(round(a * b) / 2)} cm^2(s)")
+
