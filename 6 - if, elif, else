@@ -1,0 +1,38 @@
+age = input("Enter your age: ")
+if type(age) == int:
+    if 18 <= int(age) <= 65:
+        print("You are old enough!")
+    elif int(age) > 65:
+        print("You are too old!")
+    elif int(age) < 18:
+        print("You are too young!")
+else:
+    print("Invalid input")
+
+for_sale = False
+if not for_sale:
+    print("This item is for sale")
+else:
+    print("This item is NOT for sale")
+
+#EXAMPLE - Calculator
+
+operation = input("Select your operation (+ - * /): ")
+if operation == "+":
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(a + b)
+elif operation == "-":
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(a - b)
+elif operation == "*":
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(a * b)
+elif operation == "/":
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    print(a / b)
+else:
+    print("Invalid input")
