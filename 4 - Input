@@ -15,3 +15,16 @@ item = input("What would you buy?: ")
 print(f"{item}s price is {len(item)*0.99}")
 quantity = int(input("How many would you buy?: "))
 print(f"Total price is {quantity*(0.99*len(item))} ({quantity} {item}(s) / {len(item)*0.99} per {item})")
+
+#EXAMPLE 3 - Madlibs game
+
+adjective_1 = input("Enter an adjective: ")
+adjective_2 = input("Enter an adjective: ")
+adjective_3 = input("Enter an adjective: ")
+noun_1 = input("Enter a noun: ")
+verb_1 = input("Enter a verb: ")
+
+print(f"Today I went to a(n) {adjective_1} zoo.")
+print(f"In an exhibit, I saw an {noun_1}.")
+print(f"{noun_1} was {adjective_2} and {verb_1}.")
+print(f"I was {adjective_3}!")
