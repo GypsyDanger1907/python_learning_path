@@ -9,3 +9,9 @@ print(f"Next year you'll be {int(user_age) + 1} years old!")
 width = input("wide?(cm): ")
 height = input("how many pixels tall?(cm): ")
 print(f"Your rectangles area is * {int(width) * int(height)} * cm2(s)")
+
+#EXAMPLE 2 - Shopping Cart Program
+item = input("What would you buy?: ")
+print(f"{item}s price is {len(item)*0.99}")
+quantity = int(input("How many would you buy?: "))
+print(f"Total price is {quantity*(0.99*len(item))} ({quantity} {item}(s) / {len(item)*0.99} per {item})")
