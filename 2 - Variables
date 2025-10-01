@@ -1,0 +1,11 @@
+#string, integer, float, boolean
+string_one = "Hello world!" # string_one = 'Hello world!'
+int_one = 2
+float_one = 3.14
+boolean_one = True
+print(string_one)
+print("string_one")
+print(int_one)
+print(f"You have {int_one} apples.")
+print(float_one)
+print(boolean_one)
