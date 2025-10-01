@@ -1,0 +1,15 @@
+#str(), int(), float(), bool()
+null = None
+name = "Michael"
+age = 23
+gpa = 3.4
+is_student = True
+
+print(type(name)) # output is "<class 'str'>", "type" show us the type of the variable.
+print(int(gpa)) # print "3"
+print(float(age)) # prints "23.0"
+
+print(str(age) + "1") # prints "231"
+
+print(bool(name)) # prints "True". If the variable isn't null, it turns true.
+print(bool(null)) # prints "False".
