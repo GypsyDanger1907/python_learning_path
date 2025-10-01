@@ -1,0 +1,11 @@
+#input() = returns string
+
+user_name = input("what's your name?: ")
+user_age = input("what's your age?: ")
+print(f"Welcome back _{user_name}_!")
+print(f"Next year you'll be {int(user_age) + 1} years old!")
+
+#EXAMPLE - Rectangle Area Calculator
+width = input("wide?(cm): ")
+height = input("how many pixels tall?(cm): ")
+print(f"Your rectangles area is * {int(width) * int(height)} * cm2(s)")
