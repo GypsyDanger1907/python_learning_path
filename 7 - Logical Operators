@@ -1,0 +1,17 @@
+#or, and, not
+temp = 25
+is_raining = True
+
+if temp < 0 or temp > 30:
+    print("Temperature is not good for picnic.")
+else:
+    print("Temperature is good for picnic.")
+
+if (0 < temp < 30) and not is_raining:
+    print("Temperature and weather is good for picnic.")
+elif (0 < temp < 30) and  is_raining:
+    print("Temperature is good for picnic.")
+elif (temp < 0 or temp > 30) and not is_raining:
+    print("Weather is good for picnic.")
+else:
+    print("Both of the variables are bad for picnic.")
