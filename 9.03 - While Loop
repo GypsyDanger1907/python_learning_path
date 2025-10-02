@@ -1,0 +1,26 @@
+name = input("What's your name?: ")
+"""
+if name == "":
+    print("Invalid input!")
+else:
+    print(f"Hello {name}")
+"""
+
+while name == "":
+    print("Invalid input!")
+    name = input("What's your name?: ")
+else:
+    print(f"Hello {name}")
+
+food = input("what's your favourite food?(q to quit): ")
+while not food == "q":
+    print(f"great! {food}")
+    food = input("What's your favourite food?: ")
+print("Goodbye!")
+
+num = int(input("Pick a num between 1 and 10: "))
+while num < 1 or num > 10:
+    print("Invalid input!")
+    num = int(input("Pick a num between 1 and 10: "))
+else:
+    print(f"{num}! Good bye!")
