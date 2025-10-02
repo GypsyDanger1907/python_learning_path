@@ -1,0 +1,26 @@
+price1 = 3.14159
+price2 = -385.2
+price3 = 12
+
+print(f"Price 1 is ${price1:.2f}") # 3.14
+print(f"Price 2 is ${price2:.2f}") # -385.20
+print(f"Price 3 is ${price3:.2f}") # 12.00
+
+print(f"Price 1 is ${price1:10}") # Price 1 is $   3.14159
+print(f"Price 1 is ${price1:>10}") # Price 1 is $   3.14159
+print(f"Price 1 is ${price1:010}") # Price 1 is $0003.14159
+print(f"Price 1 is $({price1:<10})") # Price 1 is $(3.14159   )
+print(f"Price 1 is $({price1:<010})") # Price 1 is $(3.14159000)
+print(f"Price 1 is $({price1:^10})") # Price 1 is $( 3.14159  )
+
+print(f"Price 1 is ${price1:+}") # +3.14
+print(f"Price 2 is ${price2:+}") # -385.20
+print(f"Price 3 is ${price3:+}") # +12.00
+
+print(f"Price 1 is ${price1: }") # Price 1 is $ 3.14159
+print(f"Price 2 is ${price2: }") # Price 2 is $-385.2
+print(f"Price 3 is ${price3: }") # Price 3 is $ 12
+
+price4 = 41609700.623
+print(f"Price 4 is ${price4:,}") #41,609,700.0
+print(f"Price 4 is ${price4:+,.6f}") #+41,609,700.623000
