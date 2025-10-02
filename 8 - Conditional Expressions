@@ -1,0 +1,21 @@
+#ternary operator
+
+number = -1
+print(f"positive ({number})" if number > 0 else f"negative or zero ({number})")
+print("even" if number % 2 == 0 else "odd")
+
+a = 6
+b = 7
+max_num = a if a > b else b
+print(max_num)
+
+min_num = a if a<b else b
+print(min_num)
+
+age = 17
+
+status = f"Child ({age})" if age < 18 else f"Adult ({age})"
+print(status)
+
+access = "Admin" if number > 0 else "User"
+print(access)
