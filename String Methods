@@ -1,0 +1,73 @@
+# string methods
+
+name = input ("What is your name?: ")
+
+print(f"Name length: {len(name)}")
+
+result = name.find(" ")
+print(f"Position of first ( ): {result}")
+
+result = name.rfind("e")
+print(f"Position of last (e): {result}")
+
+#find() and rfind() return -1 if the thing that they're looking for is not exist.
+
+result = name.capitalize()
+print(f"First letter capitalized: {name} -> {result}")
+
+result = name.upper()
+print(f"All letters upper: {name} -> {result}")
+
+result = name.lower()
+print(f"All letters lower: {name} -> {result}")
+
+result = name.isdigit()
+print(f"Is name only contains numbers?: {result} ({name})")
+
+result = name.isalpha()
+print(f"Is name only contains alphabets?: {result} ({name})")
+
+#phone number tester
+phone_number = input("Enter phone number (XXX XXX XXXX or XXX-XXX-XXXX): ")
+phone_number = phone_number.replace(" ", "-")
+if phone_number.isdigit() and len(phone_number) == 12:
+    print(f"Phone number is valid!: {phone_number}")
+else:
+    print(f"Phone number is invalid!: {phone_number}")
+
+phone_number = input("Enter your phone number: ")
+result = phone_number.count("-")
+print(result)
+phone_number = phone_number.replace("-", " ")
+print(phone_number)
+
+#print(help(str))
+
+#EXAMPLE - Validate Username Input (no more than 12 characters, no spaces, no digits)
+
+
+"""
+#My code. Too complex. Too vulnerable
+user_name = input("Enter your name: ")
+if len(user_name) <= 12 and user_name.isalpha() and user_name.count(" ") == 0:
+    print(f"User name is valid!: {user_name}")
+elif len(user_name) > 12 and user_name.isalpha() and user_name.count(" ") == 0:
+    print(f"User name is invalid! Username can't be longer than 12 characters: {user_name}")
+elif len(user_name) <= 12 and not user_name.isalpha() and user_name.count(" ") == 0:
+    print(f"User name is invalid! Username must contain just alphabetical characters: {user_name}")
+elif len(user_name) <= 12 and not user_name.isalpha() and user_name.count(" ") != 0:
+    print(f"User name is invalid! Username can't contain ( ): {user_name}")
+else:
+    print(f"User name is invalid! More than 1 rules are broken: {user_name}")
+"""
+
+#tutorial code
+user_name = input("Enter your name: ")
+if len(user_name) > 12:
+    print(f"Username can't be longer than 12 characters.")
+elif not user_name.find(" ") == -1:
+    print(f"Username can't contain spaces.")
+elif not user_name.isalpha():
+    print(f"Username can't contain anything but letters.")
+else:
+    print("Username is valid!")
